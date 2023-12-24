@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc mừng giáng sinh</title>
+    <style>
+        * {
+            font-size: 1.05em;
+            background-image: url('image/gif-vector-tuyet-roi-co-gia-noel1.gif');
+        }
+        
+        .container {
+            max-width: 30em;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .label1,
+        label2,
+        input[type="text"] {
+            margin-bottom: 1em;
+        }
+        
+        input[type="submit"] {
+            margin-top: 2em;
+        }
+        
+        input[type="text"],
+        select {
+            width: 20em;
+            height: 2em;
+        }
+        
+        .label1 {
+            margin-right: 70%;
+        }
+        
+        .label2 {
+            margin-right: 60%;
+        }
+        
+        select {
+            width: 20em;
+            height: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="main.php" method="post">
+            <label class="label1">Tên của bạn:</label><br>
+            <input type="text" name="name" required=""><br>
+            <label class="label2"> Giới tính của bạn:</label><br>
+            <select class="sex" name="sex">
+            <option value="Nam">Nam </option>
+            <option value="Nữ">Nữ</option>
+            <option value="Bede">Giới tính thứ 3</option>
+        </select><br>
+            <input type="submit" value="On page">
+        </form>
+    </div>
+
+</body>
+
+</html>
