@@ -60,6 +60,25 @@
             width: 20em;
             height: 2em;
         }
+        
+        @media only screen and (max-width: 768px) {
+            body {
+                background-size: contain;
+                background-attachment: fixed;
+            }
+            .container {
+                width: 90%;
+                padding: 10px;
+            }
+            input[type="text"],
+            select {
+                width: 80%;
+            }
+            .label1,
+            .label2 {
+                margin-right: 0;
+            }
+        }
     </style>
 </head>
 
