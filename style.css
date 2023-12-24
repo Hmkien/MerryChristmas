@@ -803,8 +803,8 @@ section {
 
 .content1 {
     position: absolute;
-    width: 700px;
-    height: 400px;
+    width: 70%;
+    height: 70%;
     background-image: radial-gradient(circle farthest-corner at center, #f9edf3 10%, #ffd3ee 100%);
     border-radius: 10px 70px 10px 70px;
     box-shadow: 5px 5px 10px rgb(0, 0, 0);
@@ -823,7 +823,7 @@ section {
 }
 
 .text1 {
-    width: 100px;
+    width: auto;
     padding: 5px 5px 0px 5px;
     margin-top: 70px;
     display: flex;
@@ -859,13 +859,13 @@ section {
     align-items: center;
     text-align: center;
     flex-direction: column;
-    width: 500px;
+    width: 20em;
     overflow: hidden;
 }
 
 .text2 h2:nth-child(1) {
     padding: 5px 5px 0px 5px;
-    font-size: 22px;
+    font-size: 1em;
     transform: translateX(-500px);
     font-family: 'Dancing Script', cursive;
 }
@@ -1037,15 +1037,4 @@ marquee {
     padding: 5px;
     font-family: 'Roboto', sans-serif;
     background: rgba(0, 0, 0, 0.3);
-}
-
-@media screen and (max-width: 480px) {
-    .image-decorate {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        width: 60%;
-        height: 40%;
-        z-index: 10;
-    }
 }

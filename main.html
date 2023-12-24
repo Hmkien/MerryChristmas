@@ -74,18 +74,16 @@
                                     <p id="text1">2023!</p>
                                 </div>
                                 <div class="text2">
-                                    <h2 id="text2">Chúc mừng Giáng Sinh! Mùa lễ này, hãy bên nhau chia sẻ niềm vui và tình thương. Chúng ta có thể tận hưởng những khoảnh khắc ấm áp và ý nghĩa bên gia đình và bạn bè. Hy vọng rằng mỗi chiếc đèn trang trí và hương thơm
-                                        của cây thông sẽ mang lại không khí lễ hội, làm cho mỗi khoảnh khắc trở nên đặc biệt.
-                                    </h2>
+                                    <h2 id="text2"></h2>
                                     <h2 id="text3">Chúc bạn và những người yêu quý có một mùa Giáng Sinh tràn ngập tình thương và hạnh phúc. Mời bạn tận hưởng những giây phút ấm áp, để những ước mơ thành sự thật và tình bạn mãi mãi trường tồn. Mừng Giáng Sinh và Chúc
                                         năm mới đầy niềm vui và thành công!
                                     </h2>
                                 </div>
                             </div>
                             <div class="image-decorate">
-                                <div class="pineTree">
+                                <!-- <div class="pineTree">
                                     <img src="image/pineTree.png" alt="">
-                                </div>
+                                </div> -->
                                 <div class="decorate">
                                     <img src="image/decorate.png" alt="">
                                 </div>
@@ -99,14 +97,14 @@
                                     <img src="image/bell1.png" alt="">
                                     <img src="image/bell1.png" alt="">
                                 </div>
-                                <div class="snowman">
+                                <!-- <div class="snowman">
                                     <img src="image/snowman.png" alt="">
-                                </div>
+                                </div> -->
                             </div>
                         </div>
-                        <div class="image-santa-content">
+                        <!-- <div class="image-santa-content">
                             <img src="image/santa1.png" alt="">
-                        </div>
+                        </div> -->
                     </div>
                     <div class="shadow-boxGift">
                     </div>
@@ -257,5 +255,24 @@
     </div>
 </body>
 <script src="app.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var params = new URLSearchParams(window.location.search);
+
+        var data1 = params.get('name');
+        var data2 = params.get('sex');
+        if (data2 === 'Nam') {
+            document.getElementById('text3').textContent = "Trong tiết tạ ơn và niềm vui của mùa Giáng Sinh, hãy để lòng mình trở nên như ngọn nến, tỏa sáng và lan tỏa ánh sáng, yêu thương và hạnh phúc đến mọi người xung quanh. Chúc bạn " + data1 + " đẹp trai và gia đình một mùa Giáng Sinh tràn đầy ý nghĩa và an lành!!!";
+
+        } else if (data2 === 'Nữ') {
+            document.getElementById('text3').textContent = "Trong tiết tạ ơn và niềm vui của mùa Giáng Sinh, hãy để lòng mình trở nên như ngọn nến, tỏa sáng và lan tỏa ánh sáng, yêu thương và hạnh phúc đến mọi người xung quanh. Chúc bạn " + data1 + " xinh gái và gia đình một mùa Giáng Sinh tràn đầy ý nghĩa và an lành!!!";
+
+        } else {
+            document.getElementById('text3').textContent = "Trong tiết tạ ơn và niềm vui của mùa Giáng Sinh, hãy để lòng mình trở nên như ngọn nến, tỏa sáng và lan tỏa ánh sáng, yêu thương và hạnh phúc đến mọi người xung quanh. Chúc bạn " + data1 + " bớt bê đê và gia đình một mùa Giáng Sinh tràn đầy ý nghĩa và an lành!!!";
+
+        }
+    });
+</script>
+
 
 </html>

@@ -65,19 +65,20 @@
 
 <body>
     <div class="container">
-        <form id="myForm">
+        <form id="myForm" onsubmit="submitForm(event)">
             <label class="label1">Tên của bạn:</label><br>
-            <input type="text" name="name" required=""><br>
+            <input type="text" id="data1" name="name" required=""><br>
             <label class="label2"> Giới tính của bạn:</label><br>
-            <select class="sex" name="sex">
+            <select class="sex" name="sex" id="data1">
                 <option value="Nam">Nam </option>
                 <option value="Nữ">Nữ</option>
                 <option value="Bede">Giới tính thứ 3</option>
             </select><br>
-            <input onclick="submitForm(event)" type="submit" value="On page">
+            <input type="submit" value="On page">
         </form>
     </div>
 </body>
+
 <script>
     function submitForm(event) {
         event.preventDefault();
